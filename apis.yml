@@ -1,7 +1,28 @@
 aid: vestris
+accessModel:
+  pricing: unknown
+  onboarding: approval
+  trial: false
+  try_now: false
+  public: false
+  label: Requires approval
+  confidence: medium
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/vestris.png
 name: Vestris
-description: Vestris is a company surfaced as a portfolio company of y-combinator and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Vestris is an AI-powered platform that automates the real estate pre-closing
+  process for mortgage title and closing operations. It uses browser agents to
+  log into county tax portals, extract property records, parse purchase
+  contracts, run tax calculations, generate title abstracts, and produce title
+  commitments and closing documents. Positioned as "the AI processing unit for
+  mortgage title and closing," Vestris aims to replace manual title searchers
+  and accelerate property deal closing. The company is a Y Combinator (Summer
+  2026) startup based in San Francisco. As of this profile it operates a
+  product application (waitlist / demo access) with no publicly documented
+  developer API, developer portal, SDKs, or webhook surface.
 url: https://raw.githubusercontent.com/api-evangelist/vestris/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +32,34 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Real Estate
+- PropTech
+- Title Insurance
+- Mortgage
+- Closing
+- AI Agents
+- Automation
+- Document Processing
 apis: []
+common:
+- type: Website
+  url: https://vestris.ai/
+- type: Pricing
+  url: https://vestris.ai/pricing
+- type: Login
+  url: https://vestris.ai/sign-in
+- type: About
+  url: https://vestris.ai/vision
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 0
+  pass: local-v1
